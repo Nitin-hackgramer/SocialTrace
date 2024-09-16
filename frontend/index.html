@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InvestigateHub - Social Media Investigation Tool</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">InvestigateHub</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Social Media Investigation Tool</h1>
+        <p>Explore the online footprint of suspects with precision and ease.</p>
+      </div>
+    </section>
+
+    <section class="search-section">
+      <div class="search-content">
+        <form id="searchForm" class="search-form">
+          <input
+            type="text"
+            id="suspectName"
+            name="suspectName"
+            placeholder="Enter Suspect's Name"
+            required
+          />
+          <select id="platform" name="platform" required>
+            <option value="" disabled selected>Select a platform</option>
+            <option value="facebook">Facebook</option>
+            <option value="twitter">Twitter</option>
+            <option value="instagram">Instagram</option>
+            <option value="linkedin">LinkedIn</option>
+          </select>
+          <button type="submit" class="btn">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="results-section">
+      <div class="results">
+        <!-- Search results will appear here -->
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 InvestigateHub. Privacy | Terms</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
